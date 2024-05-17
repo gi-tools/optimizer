@@ -1,0 +1,27 @@
+# This repo holds the deployed build output (GitHub Pages).
+# Only ignore local junk here; never ignore build files.
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs & temp
+*.log
+npm-debug.log*
+*.tmp
