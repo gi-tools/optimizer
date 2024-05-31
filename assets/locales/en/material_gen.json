@@ -368,6 +368,9 @@
   "Keqing": {
     "name": "Keqing"
   },
+  "Clorinde": {
+    "name": "Clorinde"
+  },
   "Sucrose": {
     "name": "Sucrose"
   },
@@ -613,6 +616,9 @@
   },
   "KeqingsStellaFortuna": {
     "name": "Keqing's Stella Fortuna"
+  },
+  "ClorindesStellaFortuna": {
+    "name": "Clorinde's Stella Fortuna"
   },
   "SucrosesStellaFortuna": {
     "name": "Sucrose's Stella Fortuna"
@@ -11278,6 +11284,9 @@
   },
   "KeqingLightningStiletto": {
     "name": "Keqing: Lightning Stiletto"
+  },
+  "ClorindeLightningStiletto": {
+    "name": "Clorinde: Lightning Stiletto"
   },
   "AchievementExplorer": {
     "name": "Achievement: Explorer"
