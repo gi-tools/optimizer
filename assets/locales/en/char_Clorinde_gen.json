@@ -1,10 +1,10 @@
 {
   "name": "Clorinde",
-  "title": "Driving Thunder",
-  "description": "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis's unilateral approach to policymaking in Liyue — but in truth, gods admire skeptics such as her quite a lot.",
-  "constellationName": "Trulla Cementarii",
+  "title": "Candlebearer, Shadowhunter",
+  "description": "An undefeated Champion Duelist. Sword in hand, she defends justice in the Court of Fontaine.",
+  "constellationName": "Rapperia",
   "auto": {
-    "name": "Yunlai Swordsmanship",
+    "name": "Oath of Hunting Shadows",
     "fields": {
       "normal": {
         "0": "<strong><strong>Normal Attack</strong>",
@@ -12,7 +12,7 @@
       },
       "charged": {
         "0": "<strong>Charged Attack</strong>",
-        "1": "Consumes a certain amount of Stamina to unleash 2 rapid sword strikes."
+        "1": "Consumes a certain amount of Stamina and fires Suppressing Shots in a fan pattern with her pistolet."
       },
       "plunging": {
         "0": "<strong>Plunging Attack</strong>",
@@ -39,29 +39,66 @@
     }
   },
   "skill": {
-    "name": "Stellar Restoration",
+    "name": "Hunter's Vigil",
     "description": {
-      "0": "Hurls a Lightning Stiletto that annihilates her opponents like the swift thunder.",
-      "1": "When the Stiletto hits its target, it deals <electro>Electro DMG</electro> to opponents in a small AoE, and places a Stiletto Mark on the spot hit.",
-      "2": "<br/>",
-      "3": "<strong>Hold</strong>",
-      "4": "Hold to adjust the direction in which the Stiletto shall be thrown.",
-      "5": "Stilettos thrown by the Hold attack mode can be suspended in mid-air, allowing Keqing to jump to them when using Stellar Restoration a second time.",
-      "6": "<br/>",
-      "7": "<strong>Lightning Stiletto</strong>",
-      "8": " If Keqing uses Stellar Restoration again or uses a Charged Attack while its duration lasts, it will clear the Stiletto Mark and produce different effects:",
-      "9": [
-        "If she uses Stellar Restoration again, she will blink to the location of the Mark and unleash one slashing attack that deals <electro>AoE Electro DMG</electro>. When blinking to a Stiletto that was thrown from a Holding attack, Keqing can leap across obstructing terrain.",
-        "If Keqing uses a Charged Attack, she will ignite a series of thundering cuts at the Mark's location, dealing <electro>AoE Electro DMG</electro>."
+      "0": "Preparing her pistolet, she enters the \"Night Vigil\" state, using steel and shot together. In this state, Clorinde's Normal Attacks will be transformed into \"Swift Hunt\" pistolet attacks, and the DMG dealt is converted into <electro>Electro DMG</electro> that cannot be overridden by infusions, and she will be unable to use Charged Attacks. Using her Elemental Skill will transform it into \"Impale the Night\": Perform a lunging attack, dealing <electro>Electro DMG</electro>. The DMG done through the aforementioned method is considered Normal Attack DMG.",
+      "1": "<br/>",
+      "2": "<strong>Swift Hunt</strong>",
+      "3": [
+        " When her Bond of Life is equal to or greater than 100% of her max HP: Performs a pistolet shot.",
+        " When her Bond of Life is less than 100%, firing her pistolet will grant her Bond of Life, with the amount gained based on her max HP. The shots she fires can pierce opponents, and DMG dealt to opponents in their path is increased."
       ],
+      "4": "<br/>",
+      "5": "<strong>Impale the Night</strong>",
+      "6": "The current percentage value of Clorinde's Bond of Life determines its effect:",
+      "7": [
+        " When the Bond of Life value is 0%, perform a normal lunging strike;",
+        " When the Bond of Life value is less than 100% of her max HP, Clorinde is healed based on the Bond of Life value, and the AoE of the lunging attack and the DMG dealt is increased;",
+        " When the value of the Bond of Life is equal to or greater than 100% of her max HP, use Impale the Night: Pact. The healing multiplier is increased, and the AoE and DMG dealt by the lunge is increased even further."
+      ],
+      "8": "<br/>",
+      "9": "In addition, when Clorinde is in the Night Vigil state, healing effects other than Impale the Night will not take effect and will instead be converted into a Bond of Life that is a percentage of the healing that would have been received.",
       "10": "<br/>",
-      "11": "<i>\"Humans are like moths, endlessly chasing the flame we call gods and adepti. But this light that I have here is my own.\"</i>"
+      "11": "Clorinde will exit the \"Night Vigil\" state when she leaves the field.",
+      "12": "<br/>",
+      "13": "<strong>Arkhe: Ousia</strong>",
+      "14": "Periodically, when Clorinde's Swift Hunt shots strike opponents, she will summon a Surging Blade at the position hit that deals Ousia-aligned <electro>Electro DMG</electro>.",
+      "15": "<br/>",
+      "16": "<i>Though the evil that lurked in the shadows of the night had been purged across thousands of years, a shadow that the light could not reach clouded human hearts.",
+      "17": "Even now, the warning left by the Golden Hunter is etched into her memory: Those of the Night Vigil, carrying aloft lit candles against the blackness, have greater need still to remain vigilant. Be not corrupted by the cold dark.</i>"
     },
     "skillParams": {
-      "0": "Lightning Stiletto DMG",
-      "1": "Slashing DMG",
-      "2": "Thunderclap Slash DMG",
-      "3": "CD",
+      "0": "Swift Hunt DMG",
+      "1": "Swift Hunt Bond of Life Gain",
+      "2": "Impale the Night DMG",
+      "3": "Impale the Night Healing",
+      "4": "Bond of Life Conversion",
+      "5": "Surging Blade DMG",
+      "6": "Surging Blade Interval",
+      "7": "Night Vigil Duration",
+      "8": "CD",
+      "9": "",
+      "10": "",
+      "11": "",
+      "12": "",
+      "13": "",
+      "14": "",
+      "15": ""
+    }
+  },
+  "burst": {
+    "name": "Last Lightfall",
+    "description": {
+      "0": "Grants herself a Bond of Life based upon her own max HP before swiftly evading and striking with saber and sidearm as one, dealing <electro>AoE Electro DMG</electro>.",
+      "1": "<br/>",
+      "2": "<i>It is said the legacy of the ancient art of resisting non-human beings with but a mortal body can be traced back to the Lochknights who resisted the Remurian Empire.",
+      "3": "Be that as it may, so long as one can find a way to control the level of force used, it's not as if it cannot be used in duels against ordinary opponents.</i>"
+    },
+    "skillParams": {
+      "0": "Skill DMG",
+      "1": "Bond of Life Gain",
+      "2": "CD",
+      "3": "Energy Cost",
       "4": "",
       "5": "",
       "6": "",
@@ -76,89 +113,71 @@
       "15": ""
     }
   },
-  "burst": {
-    "name": "Starward Sword",
-    "description": {
-      "0": "Keqing unleashes the power of lightning, dealing <electro>Electro DMG</electro> in an AOE.",
-      "1": "She then blends into the shadow of her blade, striking a series of thunderclap-blows to nearby opponents simultaneously that deal multiple instances of <electro>Electro DMG</electro>. The final attack deals massive <electro>AoE Electro DMG</electro>.",
-      "2": "<br/>",
-      "3": "<i>The swiftest technique in Keqing's personal arsenal is fast enough to bring stars crashing down.</i>"
-    },
-    "skillParams": {
-      "0": "Skill DMG",
-      "1": "Consecutive Slash DMG",
-      "2": "Last Attack DMG",
-      "3": "CD",
-      "4": "Energy Cost",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": "",
-      "11": "",
-      "12": "",
-      "13": "",
-      "14": "",
-      "15": ""
-    }
-  },
   "passive1": {
-    "name": "Thundering Penance",
+    "name": "Dark-Shattering Flame",
     "description": {
-      "0": "After recasting <strong>Stellar Restoration</strong> while a Lightning Stiletto is present, Keqing's weapon gains an <electro>Electro Infusion</electro> for 5s."
+      "0": "After a nearby party member triggers an <electro>Electro-related reaction</electro> against an opponent, <electro>Electro DMG</electro> dealt by Clorinde's Normal Attacks and <strong>Last Lightfall</strong> will be increased by 20% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. The Maximum DMG increase achievable this way for the above attacks is 1,800."
     }
   },
   "passive2": {
-    "name": "Aristocratic Dignity",
+    "name": "Lawful Remuneration",
     "description": {
-      "0": "When casting <strong>Starward Sword</strong>, Keqing's CRIT Rate is increased by 15%, and her Energy Recharge is increased by 15%. This effect lasts for 8s."
+      "0": "If Clorinde's Bond of Life is equal to or greater than 100% of her Max HP, her CRIT Rate will increase by 10% for 15s whenever her Bond of Life value increases or decreases. Max 2 stacks. Each stack is counted independently.",
+      "1": "Additionally, <strong>Hunter's Vigil</strong>'s Night Vigil state is buffed: While it is active, the percent of healing converted to Bond of Life increases to 100%."
     }
   },
   "passive3": {
-    "name": "Land's Overseer",
+    "name": "Night Vigil's Harvest",
     "description": {
-      "0": "When dispatched on an expedition in Liyue, time consumed is reduced by 25%."
+      "0": "Displays the location of nearby <strong>resources unique to Fontaine</strong> on the mini-map."
     }
   },
   "constellation1": {
-    "name": "Thundering Might",
+    "name": "\"From This Day, I Pass the Candle's Shadow-Veil\"",
     "description": {
-      "0": "Recasting <strong>Stellar Restoration</strong> while a Lightning Stiletto is present causes Keqing to deal 50% of her ATK as <electro>AoE Electro DMG</electro> at the start point and terminus of her Blink."
+      "0": "While <strong>Hunter's Vigil</strong>'s Night Vigil state is active, when <electro>Electro DMG</electro> from Clorinde's Normal Attacks hit opponents, they will trigger 2 coordinated attacks from a Nightvigil Shade summoned near the hit opponent, each dealing 30% of Clorinde's ATK as <electro>Electro DMG</electro>.",
+      "1": "This effect can occur once every 1.2s. DMG dealt this way is considered Normal Attack DMG."
     }
   },
   "constellation2": {
-    "name": "Keen Extraction",
+    "name": "\"Now, As We Face the Perils of the Long Night\"",
     "description": {
-      "0": "When Keqing's Normal and Charged Attacks hit opponents affected by <electro>Electro</electro>, they have a 50% chance of producing an Elemental Particle.",
-      "1": "This effect can only occur once every 5s."
+      "0": "Enhance the Passive Talent \"Dark-Shattering Flame\": After a nearby party member triggers an <electro>Electro-related reaction</electro> against an opponent, <electro>Electro DMG</electro> dealt by Clorinde's Normal Attacks and <strong>Last Lightfall</strong> will be increased by 30% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. When you have 3 stacks, Clorinde's interruption resistance will be increased. The Maximum DMG increase achievable this way for the above attacks is 2,700.",
+      "1": "You must first unlock the Passive Talent \"Dark-Shattering Flame.\""
     }
   },
   "constellation3": {
-    "name": "Foreseen Reformation",
+    "name": "\"I Pledge to Remember the Oath of Daylight\"",
     "description": {
-      "0": "Increases the Level of <strong>Starward Sword</strong> by 3.",
+      "0": "Increases the Level of <strong>Hunter's Vigil</strong> by 3.",
       "1": "Maximum upgrade level is 15."
     }
   },
   "constellation4": {
-    "name": "Attunement",
+    "name": "\"To Enshrine Tears, Life, and Love\"",
     "description": {
-      "0": "For 10s after Keqing triggers an <electro>Electro-related Elemental Reaction</electro>, her ATK is increased by 25%."
+      "0": "When <strong>Last Lightfall</strong> deals DMG to opponent(s), DMG dealt is increased based on Clorinde's Bond of Life percentage. Every 1% of her current Bond of Life will increase <strong>Last Lightfall</strong> DMG by 2%. The maximum <strong>Last Lightfall</strong> DMG increase achievable this way is 200%."
     }
   },
   "constellation5": {
-    "name": "Beckoning Stars",
+    "name": "\"Holding Dawn's Coming as My Votive\"",
     "description": {
-      "0": "Increases the Level of <strong>Stellar Restoration</strong> by 3.",
+      "0": "Increases the Level of <strong>Last Lightfall</strong> by 3.",
       "1": "Maximum upgrade level is 15."
     }
   },
   "constellation6": {
-    "name": "Tenacious Star",
+    "name": "\"And So Shall I Never Despair\"",
     "description": {
-      "0": "When initiating a Normal Attack, a Charged Attack, Elemental Skill or Elemental Burst, Keqing gains a 6% <electro>Electro DMG Bonus</electro> for 8s.",
-      "1": "Effects triggered by Normal Attacks, Charged Attacks, Elemental Skills and Elemental Bursts are considered independent entities."
+      "0": "For 12s after <strong>Hunter's Vigil</strong> is used, Clorinde's CRIT Rate will be increased by 10%, and her CRIT DMG by 70%.",
+      "1": "Additionally, while Night Vigil is active, a Glimbright Shade will appear under specific circumstances, executing an attack that deals 200% of Clorinde's ATK as <electro>Electro DMG</electro>. DMG dealt this way is considered Normal Attack DMG.",
+      "2": "The Glimbright Shade will appear under the following circumstances:",
+      "3": [
+        " When Clorinde is about to be hit by an attack.",
+        " When Clorinde uses Impale the Night: Pact."
+      ],
+      "4": "1 Glimbright Shade can be summoned in the aforementioned ways every 1s. 6 Shades can be summoned per single Night Vigil duration.",
+      "5": "In addition, while Night Vigil is active, the DMG Clorinde receives is decreased by 80% and her interruption resistance is increased. This effect will disappear after the Night Vigil state ends or 1s after she summons 6 Glimbright Shades."
     }
   }
 }
