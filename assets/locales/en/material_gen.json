@@ -296,6 +296,9 @@
   "MemoryOfImmovableCrystals": {
     "name": "Memory of Immovable Crystals"
   },
+  "Tester": {
+    "name": "Tester"
+  },
   "KamisatoAyaka": {
     "name": "Kamisato Ayaka"
   },
@@ -553,6 +556,9 @@
   },
   "Emilie": {
     "name": "Emilie"
+  },
+  "TestersStellaFortuna": {
+    "name": "Tester's Stella Fortuna"
   },
   "KamisatoAyakasStellaFortuna": {
     "name": "Kamisato Ayaka's Stella Fortuna"
