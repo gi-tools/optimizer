@@ -72,23 +72,23 @@
     }
   },
   "passive1": {
-    "name": "P1",
+    "name": "Self buffs",
     "description": {}
   },
   "passive2": {
-    "name": "P2",
+    "name": "On-field buffs",
     "description": {}
   },
   "passive3": {
-    "name": "P3",
+    "name": "Base Stats",
     "description": {}
   },
   "constellation1": {
-    "name": "C1",
+    "name": "Team buffs",
     "description": {}
   },
   "constellation2": {
-    "name": "C2",
+    "name": "Enemy Debuffs",
     "description": {}
   },
   "constellation3": {
